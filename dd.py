@@ -1,1 +1,0 @@
-print("solomon is traing k")
