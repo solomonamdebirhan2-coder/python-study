@@ -1,7 +1,19 @@
 base_price = 15
-age = 21
-seat_type = 'Gold'
-show_time = 'Evening'
+name=input('enter your name: '.title)
+print(name)
+age = int(input('enter your age: '))
+seat_type = input("choise your seat type : " .title)
+seat_type=seat_type.title
+if seat_type=="Gold":
+    service_charges=3
+elif seat_type=='Premium':
+    service_charges=5
+elif seat_type=="normal":
+    service_charges=1
+else:
+    print("invalid selection \n plese selecet agian 'normal', Premium ,or Gold")
+
+show_time = input('choise your show time evening or weekend')
 
 if age > 17:
     print('User is eligible to book a ticket')
@@ -44,5 +56,6 @@ if age >= 21 or age >= 18 and (show_time != 'Evening' or is_member):
     final_price=base_price + extra_charges +  service_charges - discount
 
     print("Final price of ticket:",final_price)
+    print(f"thsnks for coming{name}")
 else:
     print('Ticket booking failed due to restrictions')
