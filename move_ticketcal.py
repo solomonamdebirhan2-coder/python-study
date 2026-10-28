@@ -1,9 +1,9 @@
 base_price = 15
-name=input('enter your name: '.title)
+name=input('enter your name: ')
 print(name)
 age = int(input('enter your age: '))
-seat_type = input("choise your seat type : " .title)
-seat_type=seat_type.title
+seat_type = input("choise your seat type : ")
+seat_type=seat_type
 if seat_type=="Gold":
     service_charges=3
 elif seat_type=='Premium':
